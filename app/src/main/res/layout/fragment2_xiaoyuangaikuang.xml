@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/youImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/you"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="校园概况"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ycubj"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="学校介绍"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="#0000ff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="教学机构"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="#A9A9A9"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="管理机构"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:background="#FFD700"
+                />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="180dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="校班子成员"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="#DAA520">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="学校沿革"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:background="#6495"
+        />
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

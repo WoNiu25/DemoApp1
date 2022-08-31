@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ycxy.FunctionActivity">
+
+    <!--在我们的这个位置的话就是设置我们的相关的方法-->
+    <!--在我们的这个位置的话就是设置我们的评论的界面-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#FFFFFF"
+        android:id="@+id/Re_title"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/records"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="反馈记录"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="399dp"
+        android:layout_height="237dp"
+        android:layout_below="@+id/Re_title"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/Re_title"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="6dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/my_suggestion_submit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+            tools:ignore="MissingClass,MissingConstraints">
+            <!--在我们的这个位置的话就是设置我们的相关的输入框-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/my_suggestion_submit"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="start|top|right"
+                android:hint="请您输入APP使用过程中遇到的问题或意见"
+                android:textColorHint="#7E000000"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--在我们的这个位置的话就是设置我们的相关的方法-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="添加相关问题截图"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/insert" />
+
+        <EditText
+            android:layout_width="416dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:hint="请您输入手机号/QQ号"
+            android:textColorHint="#7E000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_suggestion_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.548"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

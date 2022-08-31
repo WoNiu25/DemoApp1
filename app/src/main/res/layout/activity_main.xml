@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:background="@drawable/drjm"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/name"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edit_userName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的账号"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:textColor="#2196F3"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:background="@drawable/password"
+            android:textSize="25sp"
+            android:layout_marginTop="35dp"
+            android:textColor="#000000"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="请输入您的密码"
+            android:textSize="25sp"
+            android:textColor="#2196F3"
+            android:layout_weight="2"
+            android:inputType="textWebPassword"/>   //隐藏密码*****
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/eye"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <CheckBox
+             android:id="@+id/remember"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="记住账号密码" />
+     </LinearLayout>-->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:backgroundTint="@color/brown"
+        android:background="@drawable/bg_username"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/youke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="游客登录"
+        android:background="@drawable/bg_username"
+        android:textAllCaps="false"
+        android:textColor="@color/brown"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_alignParentBottom="true"
+                android:text="同意《隐私政策》和《服务协议》" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

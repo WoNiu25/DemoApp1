@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    底部栏-->
+    <string name="title_home">Home</string>
+    <string name="title_tools">Tools</string>
+    <string name="title_mine">Mine</string>
+    <!--    应用工具-->
+    <string name="tools_news">学校要闻</string>
+    <string name="tools_home">办事大厅</string>
+    <string name="tools_protect">运维平台</string>
+    <string name="tools_myGrade">我的成绩</string>
+    <string name="tools_myClasses">我的课表</string>
+    <string name="tools_teachTackSys">教务系统</string>
+</resources>
