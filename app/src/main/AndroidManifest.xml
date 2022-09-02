@@ -19,13 +19,38 @@
         <activity android:name="com.example.ycxy.three.Yijianfankui_Activity" />
         <activity android:name="com.example.ycxy.three.records" />
         <activity android:name="com.example.ycxy.FunctionActivity" android:exported="false"/>
-            <activity android:name="com.example.ycxy.MainActivity" android:exported="true">
+        <activity android:name="com.example.ycxy.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.ycxy.home.CodeAnalysis" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.ycxy.home.TicketHelper" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.ycxy.home.NewsMore" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name="com.example.ycxy.Capture"
             android:screenOrientation="portrait"
